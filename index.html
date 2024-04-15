@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ohmena | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imgs/icons/favicon.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfólio Front-End de Thiago Omena">
+  <script>
+    document.documentElement.className += ' js';
+  </script>
+</head>
+<body>
+
+  <header class="header color-border container">
+    <a href="#"><img src="imgs/icons/logo.svg" alt="page logo"></a>
+    <nav>
+      <ul class="header-nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJETOS</a></li>
+        <li><a href="https://www.linkedin.com/in/thiago-omena-bb5884226/" rel="external" target="_blank">LINKEDIN</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <a href="Profile.pdf" rel="external" target="_blank" class="btn-primary header-side">CURRÍCULO</a>
+  </header>
+
+  <main class="introduction color-border container">
+
+    <div class="introduction-progress">
+      <ul>
+        <li>
+          <h2 class="color-std font-mg">HTML <span>100%</span></h2>
+        </li>
+
+        <li>
+          <h2 class="color-std font-mg">CSS <span>100%</span></h2>
+        </li>
+
+        <li>
+          <h2 class="color-std font-mg">JAVASCRIPT <span>100%</span></h2>
+        </li>
+
+        <li class="percentage">
+          <h2 class="color-std font-mg">INGLÊS <span>75%</span></h2>
+        </li>
+      </ul>
+    </div>
+
+    <article class="introduction-items" aria-label="minha introdução">
+      <h1 class="font-g color-std">Bem-vindos <span class="color-primary">!</span></h1>
+      <p class="color-secondary font-mg">Site criado com a proposta de ser meu portfólio digital. Tenha acesso rápido a todos os meus projetos clicando no link abaixo.</p>
+      <a href="https://github.com/Ohmena" rel="external" target="_blank" class="btn-primary large">Acessar Github</a>
+    </article>
+  
+  </main>
+
+  <article class="skills container color-border" id="skills" data-scroll="anima" aria-label="minhas habilidades">
+    <div class="skills-nav">
+      <h2 class="color-primary font-g">SKILLS</h2>
+      <div class="skills-nav-buttons color-std">
+        <button>&lt;</button>
+        <button>&gt;</button>
+      </div>
+    </div>
+
+    <ul class="skills-items" data-skills="anima">
+      
+      <li>
+        <a href="https://www.origamid.com/certificate/1616e7e8" rel="external" target="_blank" class="btn-primary">VER</a>
+        <h3 class="color-std font-sg">HTML</h3>
+        <p class="color-secondary font-mg">HTML é uma linguagem de marcação usada para estruturar e apresentar conteúdo na web</p>
+      </li>
+
+      <li>
+        <a href="https://www.origamid.com/certificate/1616e7e8" rel="external" target="_blank" class="btn-primary">VER</a>
+        <h3 class="color-std font-sg">CSS</h3>
+        <p class="color-secondary font-mg">CSS é o responsável por controlar a aparência e o posicionamento dos elementos do HTML</p>
+      </li>
+
+      <li>
+        <a href="https://www.origamid.com/certificate/b2045cec" rel="external" target="_blank" class="btn-primary">VER</a>
+        <h3 class="color-std font-sg">JAVASCRIPT</h3>
+        <p class="color-secondary font-mg">É uma linguagem de programação usada na web para adicionar interatividade e comportamento dinâmico às páginas</p>
+      </li>
+
+      <li>
+        <a href="https://www.origamid.com/certificate/0d98d6ef" rel="external" target="_blank" class="btn-primary">VER</a>
+        <h3 class="color-std font-sg">UI DESIGN</h3>
+        <p class="color-secondary font-mg">UI Design básico</p>
+      </li>
+
+      <li>
+        <a href="#" class="btn-primary">VER</a>
+        <h3 class="color-std font-sg">REACT</h3>
+        <p class="color-secondary font-mg">Indisponível no momento ;(</p>
+      </li>
+
+      <li>
+        <a href="https://cert.efset.org/uc8b7p" rel="external" target="_blank" class="btn-primary">VER</a>
+        <h3 class="color-std font-sg">INGLÊS</h3>
+        <p class="color-secondary font-mg">Inglês entre o intermediário e o avançado, segundo o teste EFSET. Certificado acima.</p>
+      </li>
+    </ul>
+  </article>
+
+ <article class="projects container color-border" id="projects" data-scroll="anima" aria-label="projetos do site">
+  <h2 class="color-primary font-g">PROJETOS</h2>
+  <div class="projects-nav"> <!--serves as a container for <div> button bg-->
+    <div data-menu='nav'>
+      <button class="font-mg">Últimos Projetos</button>
+      <button class="font-mg">Todos</button>
+    </div>
+  </div>
+
+  <div class="projects-items">
+    <!-- last projects area -->
+    <ul data-skills="anima" data-menu="content">
+      <li>
+        <a href="https://ohmena.github.io/pages/pokedex-projeto/index.html" rel="external" target="_blank">
+          <div class="projects-image-holder">
+            <img src="imgs/projects-images/projeto-pokedex.webp" width="950" height="540" alt="site pokedex">
+            <span>2023-2024</span>
+          </div>
+          <div class="project-content-holder">
+            <h3 class="color-std font-sg">POKEDEX CARD</h3>
+            <p class="color-secondary font-mg">Projeto mais divertido e mais complicado que já fiz. A premissa base dele é fazer um fetch de todos os pokémon da POKÉAPI, porém resolvi aumentar a dificuldade criando uma relação entre cor e tipagem de cada pokémon, além de ter uma barra de pesquisa.</p>
+            <div class="projects-icon-holder">
+              <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
+              <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
+              <img src="imgs/icons/square-js.svg" width="40" height="40" alt="javascript-icone">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://ohmena.github.io" rel="external" target="_blank">
+          <div class="projects-image-holder">
+            <img src="imgs/projects-images/old-repo-site-min.webp" width="950" height="540" alt="site antigo">
+            <span>2023-????</span>
+          </div>
+          <div class="project-content-holder">
+            <h3 class="color-std font-sg">SITE ANTIGO</h3>
+            <p class="color-secondary font-mg">Meu repositório original. Site relativamente simples criado em meados de 2023. Ele passou por grandes alterações pelo menos duas vezes, então resolvi criar outro. Mesmo assim, ele é praticamente a junção de tudo que eu havia aprendido até então.</p>
+            <div class="projects-icon-holder">
+              <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
+              <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
+              <img src="imgs/icons/square-js.svg" width="40" height="40" alt="javascript-icone">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://github.com/Ohmena/wildbeast" rel="external" target="_blank">
+          <div class="projects-image-holder">
+            <img src="imgs/projects-images/wildbeast.webp" width="950" height="540" alt="site wildbeast">
+            <span>2024</span>
+          </div>
+          <div class="project-content-holder">
+            <h3 class="color-std font-sg">WILDBEAST</h3>
+            <p class="color-secondary font-mg">Projeto focado em grid. Diferente da resolução original do curso Origamid, fiz esse site sem o uso de grid-template-areas. Além disso, adicionei uma navegação por tab para cada icone de animal. </p>
+            <div class="projects-icon-holder">
+              <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
+              <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
+              <img src="imgs/icons/square-js.svg" width="40" height="40" alt="javascript-icone">
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <h2 class="font-sg color-std hide">TODOS OS PROJETOS</h2>
+
+    <!-- all projects area -->
+    <ul data-skills="anima" data-menu="content">
+      <li>
+        <a href="https://ohmena.github.io" rel="external" target="_blank">
+          <div class="projects-image-holder">
+            <img src="imgs/projects-images/old-repo-site-min.webp" width="950" height="540" alt="site antigo">
+            <span>2023-????</span>
+          </div>
+          <div class="project-content-holder">
+            <h3 class="color-std font-sg">SITE ANTIGO</h3>
+            <p class="color-secondary font-mg">Meu repositório original. Site relativamente simples criado em meados de 2023. Ele passou por grandes alterações pelo menos duas vezes, então resolvi criar outro. Mesmo assim, ele é praticamente a junção de tudo que eu havia aprendido até então.</p>
+            <div class="projects-icon-holder">
+              <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
+              <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
+              <img src="imgs/icons/square-js.svg" width="40" height="40" alt="javascript-icone">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://ohmena.github.io/pages/pokedex-projeto/index.html" rel="external" target="_blank">
+          <div class="projects-image-holder">
+            <img src="imgs/projects-images/projeto-pokedex.webp" width="950" height="540" alt="site pokedex">
+            <span>2023-2024</span>
+          </div>
+          <div class="project-content-holder">
+            <h3 class="color-std font-sg">POKEDEX CARD</h3>
+            <p class="color-secondary font-mg">Projeto mais divertido e mais complicado que já fiz. A premissa base dele é fazer um fetch de todos os pokémon da POKÉAPI, porém resolvi aumentar a dificuldade criando uma relação entre cor e tipagem de cada pokémon, além de ter uma barra de pesquisa.</p>
+            <div class="projects-icon-holder">
+              <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
+              <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
+              <img src="imgs/icons/square-js.svg" width="40" height="40" alt="javascript-icone">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://ohmena.github.io/pages/ballebot.html" rel="external" target="_blank">
+          <div class="projects-image-holder">
+            <img src="imgs/projects-images/projeto-ballerini-min.webp" width="950" height="540" alt="site ballerini">
+            <span>2023</span>
+          </div>
+          <div class="project-content-holder">
+            <h3 class="color-std font-sg">BALLEBOT</h3>
+            <p class="color-secondary font-mg">Landing Page do projeto Ballebot da Rafaella Ballerini e também o meu primeiro projeto. Página bastante simples, porém bonita e eficiente. Ótima para treinar o uso do flexbox.</p>
+            <div class="projects-icon-holder">
+              <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
+              <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://github.com/Ohmena/wildbeast" rel="external" target="_blank">
+          <div class="projects-image-holder">
+            <img src="imgs/projects-images/wildbeast.webp" width="950" height="540" alt="site wildbeast">
+            <span>2024</span>
+          </div>
+          <div class="project-content-holder">
+            <h3 class="color-std font-sg">WILDBEAST</h3>
+            <p class="color-secondary font-mg">Projeto focado em grid. Diferente da resolução original do curso Origamid, fiz esse site sem o uso de grid-template-areas. Além disso, adicionei uma navegação por tab para cada icone de animal. </p>
+            <div class="projects-icon-holder">
+              <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
+              <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
+              <img src="imgs/icons/square-js.svg" width="40" height="40" alt="javascript-icone">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://ohmena.github.io/pages/kitsune/index.html" rel="external" target="_blank">
+          <div class="projects-image-holder">
+            <img src="imgs/projects-images/kitsune.webp" width="950" height="540" alt="site kitsune">
+            <span>2023</span>
+          </div>
+          <div class="project-content-holder">
+            <h3 class="color-std font-sg">KITSUNE</h3>
+            <p class="color-secondary font-mg">Um pouco desafiador. Me arrisquei saindo da zona de conforto com uma solução usando grid layout. Assim como no Bikcraft, fiz uso de box-shadow para dar ilusão da imagem estourar o container. O mais "complicado" foi o uso de input e label no HTML por eu não estar acostumado com isso.</p>
+            <div class="projects-icon-holder">
+              <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
+              <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://github.com/Ohmena/relogio-digital" rel="external" target="_blank">
+          <div class="projects-image-holder">
+            <img src="imgs/projects-images/relogio.webp" width="950" height="540" alt="relogio digital">
+            <span>2023</span>
+          </div>
+          <div class="project-content-holder">
+            <h3 class="color-std font-sg">RELÓGIO DIGITAL</h3>
+            <p class="color-secondary font-mg">Projeto extremamente simples majoritariamente focado em JavaScript. Ele usa o constructor new Date() e mostra as horas, minutos e segundos na tela.</p>
+            <div class="projects-icon-holder">
+              <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
+              <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
+              <img src="imgs/icons/square-js.svg" width="40" height="40" alt="javascript-icone">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://ohmena.github.io/pages/exercicio-lobo/index.html" rel="external" target="_blank">
+          <div class="projects-image-holder">
+            <img src="imgs/projects-images/projeto-lobo-min.webp" width="950" height="540" alt="site lobo">
+            <span>2023</span>
+          </div>
+          <div class="project-content-holder">
+            <h3 class="color-std font-sg">LOBO ORIGAMID</h3>
+            <p class="color-secondary font-mg">Outra página criada durante o curso de HTML e CSS da Origamid. Além de ser meu primeiro contato com classes utilitárias, esse projeto foi excelente para treinar o uso do grid layout, flexbox e pseudo-elementos.</p>
+            <div class="projects-icon-holder">
+              <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
+              <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a href="https://ohmena.github.io/pages/projeto-bikcraft/index.html" rel="external" target="_blank">
+          <div class="projects-image-holder">
+            <img src="imgs/projects-images/projeto-bikcraft-min.webp" width="950" height="540" alt="site lobo">
+            <span>2023</span>
+          </div>
+          <div class="project-content-holder">
+            <h3 class="color-std font-sg">BIKCRAFT</h3>
+            <p class="color-secondary font-mg">Página criada durante o curso de HTML e CSS da Origamid. Apresenta efeitos bastante interessantes feitos com CSS e um uso criativo do box-shadow para criar ilusão de que a imagem está estourando o container.</p>
+            <div class="projects-icon-holder">
+              <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
+              <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+ </article>
+
+ <article class="faq container color-border" data-scroll="anima" id="faq">
+  <div>
+    <h2 class="font-g color-std">Perguntas Frequentes<span class="color-primary">.</span></h2>
+    <p class="font-mg color-secondary">Caso ainda tenha dúvidas ou precise de mais informações, só me chamar no <a class="color-primary" href="https://www.linkedin.com/in/thiago-omena-bb5884226/" rel="external" target="_blank">LINKEDIN!</a></p>
+  </div>
+
+  <dl data-accordion="list">
+    <div class="faq-list">
+      <dt class="font-mg color-std">Há quanto tempo você estuda Front-End?</dt>
+      <dd class="font-mg color-secondary">Desde 2022 venho me profissionalizando na área.</dd>
+    </div>
+
+    <div class="faq-list">
+      <dt class="font-mg color-std">Quais cursos você fez e/ou vai fazer?</dt>
+      <dd class="font-mg color-secondary">Fiz os cursos de front-end da <strong>Origamid</strong> e terminarei o curso de Sistemas para Internet da faculdade <strong>Estácio</strong> ainda em 2024.</dd>
+    </div>
+
+    <div class="faq-list">
+      <dt class="font-mg color-std">O que é essa página?</dt>
+      <dd class="font-mg color-secondary">É um portfólio digital completamente novo feito para substituir minha antiga <a class="color-primary" rel="external" target="_blank" href="https://ohmena.github.io"><strong>página</strong>.</a> Como o repositório anterior já havia passado por duas grandes mudanças, resolvi criar um novo site com estilos e animações novas.</dd>
+    </div>
+  </dl>
+ </article>
+
+  <footer class="container footer">
+    <p class="color-secondary">COPYRIGHT © Ohmena 2024</p>
+    <ul>
+      <li>
+        <a href="https://github.com/Ohmena" rel="external" target="_blank">
+          <img src="imgs/icons/github.svg" width="30" height="30" alt="github">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/thiago-omena-bb5884226/" rel="external" target="_blank">
+          <img src="imgs/icons/linkedin-in.svg" width="30" height="30" alt="linkedin">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+  <script type="module" src="js/script.js"></script>
+
+</body>
+</html>

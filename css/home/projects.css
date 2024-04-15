@@ -1,0 +1,140 @@
+.projects {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.projects h2 {
+  margin-bottom: 60px;
+}
+
+.projects-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.projects-nav div {
+  background-color:rgb(39, 17, 83, 0.2);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.projects-nav button {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: var(--color-secondary);
+  background-color:rgb(39, 17, 83, 0.1);
+  padding: 10px 20px;
+  transition: .5s;
+}
+
+.projects-nav button:hover {
+  background-color: var(--color-primary);
+  color: var(--color-std);
+}
+
+.projects-image-holder {
+  position: relative;
+}
+
+.projects-image-holder img {
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+  object-fit: cover;
+}
+
+.projects-image-holder span {
+  position: absolute;
+  bottom: 0;
+  color: var(--color-std);
+  background-color:rgb(39, 17, 83, 0.8);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.projects-items ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.projects-items li {
+  background-color:rgb(39, 17, 83, 0.3);
+  border-radius: 10px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.projects-items li:hover {
+  transform: scale(1.1);
+}
+
+.project-content-holder {
+  padding: 40px;
+}
+
+.project-content-holder h3, .project-content-holder p {
+  margin-bottom: 20px;
+}
+
+.projects-icon-holder {
+  display: flex;
+  gap: 20px;
+}
+
+[data-menu='nav'] button.active {
+  background-color: var(--color-primary);
+  color: var(--color-std);
+}
+
+.js [data-menu='content'] {
+  display: none;
+}
+
+[data-menu='content'].active {
+  display: grid;
+  animation: animateProject 1s forwards;
+}
+
+.js .hide {
+  display: none;
+}
+
+.hide.active {
+  display: block;
+  animation: animateProject 1s forwards;
+}
+
+@keyframes animateProject {
+  from {
+    opacity: 0;
+    transform: translate3d(-60px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .projects-items ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1000px) {
+  .projects {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .projects-items li:hover {
+    transform: scale(1);
+  }
+  .projects-items ul {
+    grid-template-columns: 1fr;
+  }
+}

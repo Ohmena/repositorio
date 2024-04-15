@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer ul {
+  display: flex;
+  gap: 10px;
+}
+
+.footer li {
+  padding: 10px;
+  transition: .3s;
+  border-radius: 50%;
+}
+
+.footer li:hover {
+  background-color: var(--color-border);
+}
