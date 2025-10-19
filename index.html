@@ -11,112 +11,145 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
   <meta name="description" content="Portfólio Front-End de Thiago Omena. Veja o meu repositório com todos os projetos que já fiz!">
-  <meta name="google-site-verification" content="0yyi2mfDtOE-aAkhk_kvFKMGFnDDYFZdPJt0H2oV39I" />
+  <meta name="google-site-verification" content="0yyi2mfDtOE-aAkhk_kvFKMGFnDDYFZdPJt0H2oV39I"/>
   <script>
     document.documentElement.className += ' js';
   </script>
 </head>
 <body>
+  <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">
+                    <span class="logo-icon">★</span>
+                    <span class="logo-text">OHMENA</span>
+                </a>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">HOME</a></li>
+                        <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                        <li><a href="#projetos" class="nav-link">PROJETOS</a></li>
+                        <li><a href="https://www.linkedin.com/in/thiago-omena-bb5884226/" rel="external" target="_blank" class="nav-link">LINKEDIN</a></li>
+                        <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    </ul>
+                    <a href="Profile.pdf" rel="external" target="_blank" class="btn btn-primary">CURRÍCULO</a>
+                </nav>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
-  <header class="header color-border container">
-    <a href="#"><img src="imgs/icons/logo.svg" alt="page logo"></a>
-    <nav>
-      <ul class="header-nav">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#projects">PROJETOS</a></li>
-        <li><a href="https://www.linkedin.com/in/thiago-omena-bb5884226/" rel="external" target="_blank">LINKEDIN</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </nav>
-    <a href="Profile.pdf" rel="external" target="_blank" class="btn-primary header-side">CURRÍCULO</a>
-  </header>
+  <main class="introduction" id="home" aria-label="conteúdo principal do site">
+        <div class="container">
+            <div class="introduction-grid">
+                <div class="introduction-left">
+                    <div class="skills-preview">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-percent">100%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
 
-  <main class="introduction color-border container">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percent">100%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
 
-    <div class="introduction-progress">
-      <ul>
-        <li>
-          <h2 class="color-std font-mg">HTML <span>100%</span></h2>
-        </li>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">JAVASCRIPT</span>
+                                <span class="skill-percent">100%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 100%"></div>
+                            </div>
+                        </div>
 
-        <li>
-          <h2 class="color-std font-mg">CSS <span>100%</span></h2>
-        </li>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span class="skill-name">INGLÊS</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <li>
-          <h2 class="color-std font-mg">JAVASCRIPT <span>100%</span></h2>
-        </li>
+                <div class="introduction-right">
+                    <h1 class="introduction-title">
+                        Bem-vindos<span class="accent">!</span>
+                    </h1>
+                    <p class="introduction-description">
+                        Site criado com a proposta de ser meu portfólio digital. Tenha acesso rápido a todos os meus projetos clicando no link abaixo.
+                    </p>
+                    <a href="https://github.com/Ohmena" rel="external" target="_blank" class="btn btn-secondary">ACESSAR GITHUB</a>
+                </div>
+            </div>
+        </div>
+      </main>
 
-        <li class="percentage">
-          <h2 class="color-std font-mg">INGLÊS <span>75%</span></h2>
-        </li>
-      </ul>
-    </div>
-
-    <article class="introduction-items" aria-label="minha introdução">
-      <h1 class="font-g color-std">Bem-vindos <span class="color-primary">!</span></h1>
-      <p class="color-secondary font-mg">Site criado com a proposta de ser meu portfólio digital. Tenha acesso rápido a todos os meus projetos clicando no link abaixo.</p>
-      <a href="https://github.com/Ohmena" rel="external" target="_blank" class="btn-primary large">Acessar Github</a>
-    </article>
-  
-  </main>
-
-  <article class="skills container color-border" id="skills" data-scroll="anima" aria-label="minhas habilidades">
-    <div class="skills-nav">
-      <h2 class="color-primary font-g">SKILLS</h2>
-      <div class="skills-nav-buttons color-std">
-        <button>&lt;</button>
-        <button>&gt;</button>
+  <article class="skills" id="skills" aria-label="minhas habilidades">
+    <div class="container" data-scroll="anima">
+      <div class="skills-nav">
+        <h2>SKILLS</h2>
       </div>
-    </div>
-
-    <ul class="skills-items" data-skills="anima">
+      <ul class="skills-items" data-skills="anima">
       
-      <li>
-        <a href="https://www.origamid.com/certificate/1616e7e8" rel="external" target="_blank" class="btn-primary">VER</a>
-        <h3 class="color-std font-sg">HTML</h3>
-        <p class="color-secondary font-mg">HTML é uma linguagem de marcação usada para estruturar e apresentar conteúdo na web</p>
-      </li>
-
-      <li>
-        <a href="https://www.origamid.com/certificate/1616e7e8" rel="external" target="_blank" class="btn-primary">VER</a>
-        <h3 class="color-std font-sg">CSS</h3>
-        <p class="color-secondary font-mg">CSS é o responsável por controlar a aparência e o posicionamento dos elementos do HTML</p>
-      </li>
-
-      <li>
-        <a href="https://www.origamid.com/certificate/b2045cec" rel="external" target="_blank" class="btn-primary">VER</a>
-        <h3 class="color-std font-sg">JAVASCRIPT</h3>
-        <p class="color-secondary font-mg">É uma linguagem de programação usada na web para adicionar interatividade e comportamento dinâmico às páginas</p>
-      </li>
-
-      <li>
-        <a href="https://www.origamid.com/certificate/0d98d6ef" rel="external" target="_blank" class="btn-primary">VER</a>
-        <h3 class="color-std font-sg">UI DESIGN</h3>
-        <p class="color-secondary font-mg">UI Design básico</p>
-      </li>
-
-      <li>
-        <a href="#" class="btn-primary">VER</a>
-        <h3 class="color-std font-sg">REACT</h3>
-        <p class="color-secondary font-mg">Indisponível no momento ;(</p>
-      </li>
-
-      <li>
-        <a href="https://cert.efset.org/uc8b7p" rel="external" target="_blank" class="btn-primary">VER</a>
-        <h3 class="color-std font-sg">INGLÊS</h3>
-        <p class="color-secondary font-mg">Inglês entre o intermediário e o avançado, segundo o teste EFSET. Certificado acima.</p>
-      </li>
-    </ul>
+        <li>
+          <a href="https://www.origamid.com/certificate/1616e7e8" rel="external" target="_blank" class="btn-primary">VER</a>
+          <h3>HTML</h3>
+          <p>HTML é uma linguagem de marcação usada para estruturar e apresentar conteúdo na web</p>
+        </li>
+        <li>
+          <a href="https://www.origamid.com/certificate/1616e7e8" rel="external" target="_blank" class="btn-primary">VER</a>
+          <h3>CSS</h3>
+          <p>CSS é o responsável por controlar a aparência e o posicionamento dos elementos do HTML</p>
+        </li>
+        <li>
+          <a href="https://www.origamid.com/certificate/b2045cec" rel="external" target="_blank" class="btn-primary">VER</a>
+          <h3>JAVASCRIPT</h3>
+          <p>É uma linguagem de programação usada na web para adicionar interatividade e comportamento dinâmico às páginas</p>
+        </li>
+        <li>
+          <a href="https://www.origamid.com/certificate/0d98d6ef" rel="external" target="_blank" class="btn-primary">VER</a>
+          <h3>UI DESIGN</h3>
+          <p>UI Design básico</p>
+        </li>
+        <li>
+          <a href="#" class="btn-primary">VER</a>
+          <h3>REACT</h3>
+          <p>Indisponível no momento</p>
+        </li>
+        <li>
+          <a href="https://cert.efset.org/uc8b7p" rel="external" target="_blank" class="btn-primary">VER</a>
+          <h3>INGLÊS</h3>
+          <p>Inglês entre o intermediário e o avançado, segundo o teste EFSET. Certificado acima.</p>
+        </li>
+      </ul>
+    </div>
   </article>
 
- <article class="projects container color-border" id="projects" data-scroll="anima" aria-label="projetos do site">
-  <h2 class="color-primary font-g">PROJETOS</h2>
+ <article class="projects container" id="projects" data-scroll="anima" aria-label="projetos do site">
+  <h2>PROJETOS</h2>
   <div class="projects-nav"> <!--serves as a container for <div> button bg-->
     <div data-menu='nav'>
-      <button class="font-mg">Últimos Projetos</button>
-      <button class="font-mg">Todos</button>
+      <button>Últimos Projetos</button>
+      <button>Todos</button>
     </div>
   </div>
 
@@ -130,8 +163,8 @@
             <span>2023-2024</span>
           </div>
           <div class="project-content-holder">
-            <h3 class="color-std font-sg">POKEDEX CARD</h3>
-            <p class="color-secondary font-mg">Projeto mais divertido e mais complicado que já fiz. A premissa base dele é fazer um fetch de todos os pokémon da POKÉAPI, porém resolvi aumentar a dificuldade criando uma relação entre cor e tipagem de cada pokémon, além de ter uma barra de pesquisa.</p>
+            <h3>POKEDEX CARD</h3>
+            <p>Projeto mais divertido e mais complicado que já fiz. A premissa base dele é fazer um fetch de todos os pokémon da POKÉAPI, porém resolvi aumentar a dificuldade criando uma relação entre cor e tipagem de cada pokémon, além de ter uma barra de pesquisa.</p>
             <div class="projects-icon-holder">
               <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
               <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
@@ -148,8 +181,8 @@
             <span>2023-????</span>
           </div>
           <div class="project-content-holder">
-            <h3 class="color-std font-sg">SITE ANTIGO</h3>
-            <p class="color-secondary font-mg">Meu repositório original. Site relativamente simples criado em meados de 2023. Ele passou por grandes alterações pelo menos duas vezes, então resolvi criar outro. Mesmo assim, ele é praticamente a junção de tudo que eu havia aprendido até então.</p>
+            <h3>SITE ANTIGO</h3>
+            <p>Meu repositório original. Site relativamente simples criado em meados de 2023. Ele passou por grandes alterações pelo menos duas vezes, então resolvi criar outro. Mesmo assim, ele é praticamente a junção de tudo que eu havia aprendido até então.</p>
             <div class="projects-icon-holder">
               <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
               <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
@@ -166,8 +199,8 @@
             <span>2024</span>
           </div>
           <div class="project-content-holder">
-            <h3 class="color-std font-sg">WILDBEAST</h3>
-            <p class="color-secondary font-mg">Projeto focado em grid. Diferente da resolução original do curso Origamid, fiz esse site sem o uso de grid-template-areas. Além disso, adicionei uma navegação por tab para cada icone de animal. </p>
+            <h3>WILDBEAST</h3>
+            <p>Projeto focado em grid. Diferente da resolução original do curso Origamid, fiz esse site sem o uso de grid-template-areas. Além disso, adicionei uma navegação por tab para cada icone de animal. </p>
             <div class="projects-icon-holder">
               <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
               <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
@@ -178,7 +211,7 @@
       </li>
     </ul>
 
-    <h2 class="font-sg color-std hide">TODOS OS PROJETOS</h2>
+    <h2 class="hide">TODOS OS PROJETOS</h2>
 
     <!-- all projects area -->
     <ul data-skills="anima" data-menu="content">
@@ -189,8 +222,8 @@
             <span>2023-????</span>
           </div>
           <div class="project-content-holder">
-            <h3 class="color-std font-sg">SITE ANTIGO</h3>
-            <p class="color-secondary font-mg">Meu repositório original. Site relativamente simples criado em meados de 2023. Ele passou por grandes alterações pelo menos duas vezes, então resolvi criar outro. Mesmo assim, ele é praticamente a junção de tudo que eu havia aprendido até então.</p>
+            <h3>SITE ANTIGO</h3>
+            <p>Meu repositório original. Site relativamente simples criado em meados de 2023. Ele passou por grandes alterações pelo menos duas vezes, então resolvi criar outro. Mesmo assim, ele é praticamente a junção de tudo que eu havia aprendido até então.</p>
             <div class="projects-icon-holder">
               <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
               <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
@@ -207,8 +240,8 @@
             <span>2023-2024</span>
           </div>
           <div class="project-content-holder">
-            <h3 class="color-std font-sg">POKEDEX CARD</h3>
-            <p class="color-secondary font-mg">Projeto mais divertido e mais complicado que já fiz. A premissa base dele é fazer um fetch de todos os pokémon da POKÉAPI, porém resolvi aumentar a dificuldade criando uma relação entre cor e tipagem de cada pokémon, além de ter uma barra de pesquisa.</p>
+            <h3>POKEDEX CARD</h3>
+            <p>Projeto mais divertido e mais complicado que já fiz. A premissa base dele é fazer um fetch de todos os pokémon da POKÉAPI, porém resolvi aumentar a dificuldade criando uma relação entre cor e tipagem de cada pokémon, além de ter uma barra de pesquisa.</p>
             <div class="projects-icon-holder">
               <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
               <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
@@ -225,8 +258,8 @@
             <span>2023</span>
           </div>
           <div class="project-content-holder">
-            <h3 class="color-std font-sg">BALLEBOT</h3>
-            <p class="color-secondary font-mg">Landing Page do projeto Ballebot da Rafaella Ballerini e também o meu primeiro projeto. Página bastante simples, porém bonita e eficiente. Ótima para treinar o uso do flexbox.</p>
+            <h3>BALLEBOT</h3>
+            <p>Landing Page do projeto Ballebot da Rafaella Ballerini e também o meu primeiro projeto. Página bastante simples, porém bonita e eficiente. Ótima para treinar o uso do flexbox.</p>
             <div class="projects-icon-holder">
               <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
               <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
@@ -242,8 +275,8 @@
             <span>2024</span>
           </div>
           <div class="project-content-holder">
-            <h3 class="color-std font-sg">WILDBEAST</h3>
-            <p class="color-secondary font-mg">Projeto focado em grid. Diferente da resolução original do curso Origamid, fiz esse site sem o uso de grid-template-areas. Além disso, adicionei uma navegação por tab para cada icone de animal. </p>
+            <h3>WILDBEAST</h3>
+            <p>Projeto focado em grid. Diferente da resolução original do curso Origamid, fiz esse site sem o uso de grid-template-areas. Além disso, adicionei uma navegação por tab para cada icone de animal. </p>
             <div class="projects-icon-holder">
               <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
               <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
@@ -260,8 +293,8 @@
             <span>2023</span>
           </div>
           <div class="project-content-holder">
-            <h3 class="color-std font-sg">KITSUNE</h3>
-            <p class="color-secondary font-mg">Um pouco desafiador. Me arrisquei saindo da zona de conforto com uma solução usando grid layout. Assim como no Bikcraft, fiz uso de box-shadow para dar ilusão da imagem estourar o container. O mais "complicado" foi o uso de input e label no HTML por eu não estar acostumado com isso.</p>
+            <h3>KITSUNE</h3>
+            <p>Um pouco desafiador. Me arrisquei saindo da zona de conforto com uma solução usando grid layout. Assim como no Bikcraft, fiz uso de box-shadow para dar ilusão da imagem estourar o container. O mais "complicado" foi o uso de input e label no HTML por eu não estar acostumado com isso.</p>
             <div class="projects-icon-holder">
               <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
               <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
@@ -277,8 +310,8 @@
             <span>2023</span>
           </div>
           <div class="project-content-holder">
-            <h3 class="color-std font-sg">RELÓGIO DIGITAL</h3>
-            <p class="color-secondary font-mg">Projeto extremamente simples majoritariamente focado em JavaScript. Ele usa o constructor new Date() e mostra as horas, minutos e segundos na tela.</p>
+            <h3>RELÓGIO DIGITAL</h3>
+            <p>Projeto extremamente simples majoritariamente focado em JavaScript. Ele usa o constructor new Date() e mostra as horas, minutos e segundos na tela.</p>
             <div class="projects-icon-holder">
               <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
               <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
@@ -295,8 +328,8 @@
             <span>2023</span>
           </div>
           <div class="project-content-holder">
-            <h3 class="color-std font-sg">LOBO ORIGAMID</h3>
-            <p class="color-secondary font-mg">Outra página criada durante o curso de HTML e CSS da Origamid. Além de ser meu primeiro contato com classes utilitárias, esse projeto foi excelente para treinar o uso do grid layout, flexbox e pseudo-elementos.</p>
+            <h3>LOBO ORIGAMID</h3>
+            <p>Outra página criada durante o curso de HTML e CSS da Origamid. Além de ser meu primeiro contato com classes utilitárias, esse projeto foi excelente para treinar o uso do grid layout, flexbox e pseudo-elementos.</p>
             <div class="projects-icon-holder">
               <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
               <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
@@ -312,8 +345,8 @@
             <span>2023</span>
           </div>
           <div class="project-content-holder">
-            <h3 class="color-std font-sg">BIKCRAFT</h3>
-            <p class="color-secondary font-mg">Página criada durante o curso de HTML e CSS da Origamid. Apresenta efeitos bastante interessantes feitos com CSS e um uso criativo do box-shadow para criar ilusão de que a imagem está estourando o container.</p>
+            <h3>BIKCRAFT</h3>
+            <p>Página criada durante o curso de HTML e CSS da Origamid. Apresenta efeitos bastante interessantes feitos com CSS e um uso criativo do box-shadow para criar ilusão de que a imagem está estourando o container.</p>
             <div class="projects-icon-holder">
               <img src="imgs/icons/html5.svg" width="40" height="40" alt="html-icone">
               <img src="imgs/icons/css3-alt.svg" width="40" height="40" alt="css-icone">
@@ -325,32 +358,32 @@
   </div>
  </article>
 
- <article class="faq container color-border" data-scroll="anima" id="faq">
+ <article class="faq container" data-scroll="anima" id="faq">
   <div>
-    <h2 class="font-g color-std">Perguntas Frequentes<span class="color-primary">.</span></h2>
-    <p class="font-mg color-secondary">Caso ainda tenha dúvidas ou precise de mais informações, só me chamar no <a class="color-primary" href="https://www.linkedin.com/in/thiago-omena-bb5884226/" rel="external" target="_blank">LINKEDIN!</a></p>
+    <h2>Perguntas Frequentes<span>.</span></h2>
+    <p>Caso ainda tenha dúvidas ou precise de mais informações, só me chamar no <a href="https://www.linkedin.com/in/thiago-omena-bb5884226/" rel="external" target="_blank">LINKEDIN!</a></p>
   </div>
 
   <dl data-accordion="list">
     <div class="faq-list">
-      <dt class="font-mg color-std">Há quanto tempo você estuda Front-End?</dt>
-      <dd class="font-mg color-secondary">Desde 2022 venho me profissionalizando na área.</dd>
+      <dt>Há quanto tempo você estuda Front-End?</dt>
+      <dd>Desde 2022 venho me profissionalizando na área.</dd>
     </div>
 
     <div class="faq-list">
-      <dt class="font-mg color-std">Quais cursos você fez e/ou vai fazer?</dt>
-      <dd class="font-mg color-secondary">Fiz os cursos de front-end da <strong>Origamid</strong> e terminarei o curso de Sistemas para Internet da faculdade <strong>Estácio</strong> ainda em 2024.</dd>
+      <dt>Quais cursos você fez e/ou vai fazer?</dt>
+      <dd>Fiz os cursos de front-end da <strong>Origamid</strong> e terminei o curso de Sistemas para Internet da faculdade <strong>Estácio</strong> em 2024.</dd>
     </div>
 
     <div class="faq-list">
-      <dt class="font-mg color-std">O que é essa página?</dt>
-      <dd class="font-mg color-secondary">É um portfólio digital completamente novo feito para substituir minha antiga <a class="color-primary" rel="external" target="_blank" href="https://ohmena.github.io"><strong>página</strong>.</a> Como o repositório anterior já havia passado por duas grandes mudanças, resolvi criar um novo site com estilos e animações novas.</dd>
+      <dt>O que é essa página?</dt>
+      <dd>É um portfólio digital completamente novo feito para substituir minha antiga <a rel="external" target="_blank" href="https://ohmena.github.io"><strong>página</strong>.</a> Como o repositório anterior já havia passado por duas grandes mudanças, resolvi criar um novo site com estilos e animações novas.</dd>
     </div>
   </dl>
  </article>
 
   <footer class="container footer">
-    <p class="color-secondary">COPYRIGHT © Ohmena 2024</p>
+    <p>COPYRIGHT © Ohmena 2024</p>
     <ul>
       <li>
         <a href="https://github.com/Ohmena" rel="external" target="_blank">

@@ -1,3 +1,16 @@
+:root {
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+
+  /* Outros */
+  --radius: 12px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +19,11 @@
 }
 
 body {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: var(--font-sans);
   background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
 ul, li {
@@ -27,29 +43,45 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0 var(--spacing-md);
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
 }
 
 .btn-primary {
-  display: block;
-  color: var(--color-bg);
-  background-color: var(--color-btn);
-  border: 2px solid var(--color-primary);
-  box-shadow: 5px 5px 0 var(--color-primary);
-  padding: 10px 40px;
-  border-radius: 5px;
-  transition: .3s;
+  background: var(--color-accent);
+  color: white;
 }
 
 .btn-primary:hover {
-  background-color: var(--color-bg);
-  color: var(--color-primary);
+  background: #ea580c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(249, 115, 22, 0.3);
 }
 
-.btn-primary.large {
-  padding: 10px 60px;
+.btn-secondary {
+  background: var(--color-accent);
+  color: white;
 }
+
+.btn-secondary:hover {
+  background: #ea580c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(249, 115, 22, 0.3);
+}
+
 
 .js [data-scroll="anima"] {
   opacity: 0;
@@ -66,14 +98,5 @@ img {
   .container {
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .btn-primary, .btn-primary.large {
-    padding: 10px 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .btn-primary, .btn-primary.large {
-    padding: 5px 10px;
   }
 }

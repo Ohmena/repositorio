@@ -1,30 +1,5 @@
-.font-g {
-  font-size: 4rem;
-  font-weight: 900;
-}
-
-.font-sg {
-  font-size: 2rem;
-}
-
-.font-mg {
-  font-size: 1.25rem;
-}
-
-@media (max-width: 1000px) {
-  .font-g {
-    font-size: 3rem;
-  }
-  .font-sg {
-    font-size: 1.5rem;
-  }
-  .font-mg {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .font-g {
-    font-size: 2.5rem;
-  }
+:root {
+    /* Tipografia */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
 }

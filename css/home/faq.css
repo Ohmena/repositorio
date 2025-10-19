@@ -10,6 +10,27 @@
   margin-bottom: 30px;
 }
 
+.faq h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 800;
+  color: var(--color-text);
+}
+
+.faq p, .faq-list dt, .faq-list dd {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-size: 1.25rem;
+}
+
+.faq h2 span {
+  color: var(--color-primary);
+}
+
+.faq a {
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
+}
+
 .faq-list {
   border: 1px solid var(--color-border);
   border-radius: 10px;
@@ -18,6 +39,7 @@
 }
 
 .faq-list dt {
+  color: var(--color-text);
   margin-bottom: 10px;
   cursor: pointer;
   display: flex;

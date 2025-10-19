@@ -4,7 +4,11 @@
 }
 
 .projects h2 {
-  margin-bottom: 60px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-xl)
 }
 
 .projects-nav {
@@ -47,7 +51,7 @@
 .projects-image-holder span {
   position: absolute;
   bottom: 0;
-  color: var(--color-std);
+  color: var(--color-text);
   background-color:rgb(39, 17, 83, 0.8);
   width: 100%;
   text-align: center;
@@ -79,6 +83,19 @@
 
 .project-content-holder h3, .project-content-holder p {
   margin-bottom: 20px;
+}
+
+.project-content-holder h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 0.02em;
+}
+
+.project-content-holder p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-size: 0.9rem;
 }
 
 .projects-icon-holder {
